@@ -56,7 +56,7 @@ function CommonFooter() {
     <footer className={styles.footer}>
       <div className={styles.pagination}>
         <button className={styles.pagination__button} onClick={moveToPrev}>
-          <img src="/src/assets/icons/icon-arrowLeft.svg" alt="arrow left" />
+          <img src="./icons/icon-arrowLeft.svg" alt="arrow left" />
         </button>
 
         {res[step] &&
@@ -93,7 +93,7 @@ function CommonFooter() {
           })}
 
         <button className={styles.pagination__button} onClick={moveToNext}>
-          <img src="/src/assets/icons/icon-arrowRight.svg" alt="arrow left" />
+          <img src="./icons/icon-arrowLeft.svg" alt="arrow left" />
         </button>
       </div>
     </footer>
