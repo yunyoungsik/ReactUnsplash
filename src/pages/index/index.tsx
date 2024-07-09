@@ -6,13 +6,14 @@ import CommonHeader from '@/components/common/header/CommonHeader';
 import CommonNav from '@/components/common/navigation/CommonNav';
 import CommonSearchBar from '@/components/common/searchBar/CommonSearchBar';
 import Card from './components/Card';
+import Loading from './components/Loading';
 import DetailDialog from '@/components/common/dialog/DetailDialog';
 // types
 import { CardDTO } from './types/card';
 // css
 import styles from './styles/index.module.scss';
 
-function index() {
+function Index() {
   const imgSelector = useRecoilValueLoadable(imageData);
   const [imgData, setImgData] = useState<CardDTO[]>();
   const [open, setOpen] = useState<boolean>(false); // 이미지 상세 다이얼로그 발생(관리) State
@@ -25,7 +26,7 @@ function index() {
       });
       return result
     } else {
-      return <div>loading...</div>
+      return <Loading />
     }
   }, [imgSelector])
 
@@ -58,4 +59,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

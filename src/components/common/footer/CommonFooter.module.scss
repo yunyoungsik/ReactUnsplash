@@ -11,6 +11,7 @@
   border: 1px solid $color-gray-100;
   background-color: $color-white-000;
 }
+
 .pagination {
   display: flex;
   align-items: center;
@@ -21,45 +22,47 @@
   gap: 8px;
 
   &__button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      width: 24px;
-      height: 24px;
+    width: 24px;
+    height: 24px;
 
-      padding: 3px 7px;
+    padding: 3px 7px;
 
-      color: $color-gray-500;
+    color: $color-gray-500;
 
-      font-family: 'Public Sans', sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 16px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
 
-      background: transparent;
-      border: none;
-      outline: none;
+    background: transparent;
+    border: none;
+    outline: none;
 
-      cursor: pointer;
+    cursor: pointer;
 
-      &:hover {
-          background-color: $color-gray-100;
-          border-radius: 4px;
+    &:hover {
+      background-color: $color-gray-100;
+      border-radius: 4px;
 
-          color: $color-black-900;
-      }
-      &.active {
-          background-color: $color-gray-100;
-          border-radius: 4px;
+      color: $color-black-900;
+    }
+    
+    &.active {
+      background-color: $color-gray-100;
+      border-radius: 4px;
 
-          color: $color-black-900;
-      }
-      &.inactive {
-          background-color: $color-white-000;
-          border-radius: 4px;
+      color: $color-black-900;
+    }
 
-          color: $color-black-900;
-      }
+    &.inactive {
+      background-color: $color-white-000;
+      border-radius: 4px;
+
+      color: $color-black-900;
+    }
   }
 }

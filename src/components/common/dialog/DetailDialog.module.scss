@@ -28,6 +28,8 @@
     background-color: $color-white-000;
     border-radius: 12px;
 
+    overflow: hidden;
+
     &__header {
       display: flex;
       align-items: center;

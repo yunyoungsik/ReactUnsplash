@@ -2,12 +2,14 @@ import { useState } from 'react';
 import styles from './CommonSearchBar.module.scss';
 import { useRecoilState } from 'recoil';
 import { searchState } from '@/store/atoms/searchState';
+import { pageState } from '@/store/atoms/pageState';
 
 function CommonSearchBar() {
   const [, setSearch] = useRecoilState(searchState);
+  const [, setPage] = useRecoilState(pageState);
   const [text, setText] = useState('');
 
-  const onChange = (event) => {
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setText(event.target.value);
   };
 
@@ -18,6 +20,7 @@ function CommonSearchBar() {
     } else {
       setSearch(text); // 작성한 Input Value 값 할당
     }
+    setPage(1);
   };
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
@@ -28,6 +31,7 @@ function CommonSearchBar() {
       } else {
         setSearch(text); // 작성한 Input Value 값 할당
       }
+      setPage(1);
     }
   };
 
