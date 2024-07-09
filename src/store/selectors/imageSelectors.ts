@@ -4,7 +4,7 @@ import { searchState } from '../atoms/searchState';
 import { pageState } from '../atoms/pageState';
 
 const API_URL = 'https://api.unsplash.com/search/photos';
-const API_KEY = process.env.REACT_API_KEY;
+const API_KEY = 'DMNf5A8YB3vhiVqp9Fwu5rX9lrSXVQBTbTgkt6p5ook';
 const PER_PAGE = 30;
 
 export const imageData = selector({
