@@ -48,7 +48,7 @@ function CommonSearchBar() {
           onChange={onChange}
           onKeyDown={handleKeyDown}
         />
-        <img src="/src/assets/icons/icon-search.svg" alt="search" onClick={onSearch} />
+        <img src="./icons/icon-search.svg" alt="search" onClick={onSearch} />
       </div>
     </div>
   );
