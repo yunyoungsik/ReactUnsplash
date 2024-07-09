@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './CommonHeader.module.scss'
+import {imgLogo} from '../../../constants'
 
 function CommonHeader() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ function CommonHeader() {
   return (
     <header className={styles.header}>
       <div className={styles.header__logoBox} onClick={() => moveToPage('/')}>
-        <img src="./images/image-logo.png" alt="logo" className={styles.header__logoBox__logo} />
+        <img src={imgLogo} alt="logo" className={styles.header__logoBox__logo} />
         <span className={styles.header__logoBox__title}>
           PhotoSplash
         </span>

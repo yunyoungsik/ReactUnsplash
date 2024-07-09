@@ -4,6 +4,7 @@ import { imageData } from '@/store/selectors/imageSelectors';
 import { pageState } from '@/store/atoms/pageState';
 import styles from './CommonFooter.module.scss';
 import { searchState } from '@/store/atoms/searchState';
+import {leftArrow, rightArrow} from '../../../constants'
 
 function CommonFooter() {
   const imgSelector = useRecoilValueLoadable(imageData);
@@ -56,7 +57,7 @@ function CommonFooter() {
     <footer className={styles.footer}>
       <div className={styles.pagination}>
         <button className={styles.pagination__button} onClick={moveToPrev}>
-          <img src="./icons/icon-arrowLeft.svg" alt="arrow left" />
+          <img src={leftArrow} alt="arrow left" />
         </button>
 
         {res[step] &&
@@ -93,7 +94,7 @@ function CommonFooter() {
           })}
 
         <button className={styles.pagination__button} onClick={moveToNext}>
-          <img src="./icons/icon-arrowLeft.svg" alt="arrow left" />
+          <img src={rightArrow} alt="arrow right" />
         </button>
       </div>
     </footer>
