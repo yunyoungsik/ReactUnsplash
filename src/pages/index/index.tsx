@@ -15,7 +15,7 @@ import styles from './styles/index.module.scss';
 
 function Index() {
   const imgSelector = useRecoilValueLoadable(imageData);
-  const [imgData, setImgData] = useState<CardDTO[]>();
+  const [imgData, setImgData] = useState<CardDTO | null>(null);
   const [open, setOpen] = useState<boolean>(false); // 이미지 상세 다이얼로그 발생(관리) State
 
   const CARD_LIST = useMemo(() => {

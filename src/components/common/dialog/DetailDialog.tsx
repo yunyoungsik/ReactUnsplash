@@ -7,7 +7,7 @@ import 'react-simple-toasts/dist/theme/dark.css';
 toastConfig({ theme: 'dark' });
 
 interface Props {
-  data: CardDTO;
+  data: CardDTO | null;
   handleDialog: (eventValue: boolean) => void;
 }
 
