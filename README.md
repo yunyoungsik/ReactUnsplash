@@ -1,4 +1,4 @@
-# React Album
+# ReactUnsplash
 <img width="100%" src="https://github.com/yunyoungsik/ReactUnsplash/blob/main/src/assets/images/thmnaiil.png?raw=true" />
 [참고영상](https://www.youtube.com/watch?v=Yv5tSNr4h2c&t=12875s&ab_channel=%EA%B5%AC%EB%94%94%EC%82%AC%EB%8A%94%EA%B0%9C%EB%B0%9C%EC%9E%909Diin)
 
